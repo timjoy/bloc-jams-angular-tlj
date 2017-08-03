@@ -37,9 +37,13 @@
 
          return Fixtures;
 
-         Fixtures.getCollection = function(numberOfAlbums){
-           return [album];
+         Fixtures.getCollection = function(){
+           album = {collection.albums};
+
+           return album;
          };
+
+         return Fixtures;
      }
 
 
