@@ -1,6 +1,6 @@
 (function() {
      function CollectionCtrl(Fixtures) {
-        this.Collection = Fixtures.getCollection(12);
+        this.albums = Fixtures.getCollection(12);
      }
 
 
