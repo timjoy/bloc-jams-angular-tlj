@@ -51,6 +51,11 @@
                         $document.unbind('mouseup.thumb');
                     });
                 };
+                //Write a scope.thumbStyle method – similar to scope.fillStyle
+                //– that updates the position of the seek bar thumb.
+                scope.thumbStyle = function() {
+                    return {width: percentString()}
+                };
 
             }
         };
