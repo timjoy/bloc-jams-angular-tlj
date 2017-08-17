@@ -162,6 +162,16 @@
             song.playing = null;
           };
 
+          //A SongPlayer.volume attribute to hold the value of the volume.
+          SongPlayer.volume = 80;
+          ///A SongPlayer.setVolume() method to update the volume
+          ///on change. (The Buzz library has a setVolume method.)
+          SongPlayer.setVolume = function(volume) {
+              if (currentBuzzObject){
+                  currentBuzzObject.setVolume(volume);
+              }
+          };
+
           return SongPlayer;
      };
 
